@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#nav img{
+    width: 4% !important;
+    margin: 20px 30px !important;
+}
+#nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 32px !important;
+    width: 100% !important;
+    height: 60px !important;
+    /* background-color: aqua; */
+}
+#nav li {
+    /* gap: 20px !important; */
+
+}
+#nav li a{
+    text-decoration: none;
+    font-size: 22px !important;
+    
+}
+#nav li a:hover{
+    text-decoration:underline;
+   
+    
+}
+
+/* ============================================================================ */
+
+
+#left {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-align: end;
+    padding-left: 350px !important;
+}
+
+#left input[type="text"] {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 30px !important;
+    font-size: 22px !important;
+}
+
+
+/* ==================Start Body  =================== */
+
+#body {
+    background: url('imghp/CyberMonday2023-CustomColor12F.gif') center center no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 87vh; 
+    text-align: center;
+}
+#body h1 {
+ 
+    font-size: 70px !important;
+    color: white !important;
+}
+
+
+#body h2 {
+    padding-top: 130px !important;
+    font-size: 30px !important;
+    color: white !important;
+}
+
+#body h3 {
+    font-size: 20px !important;
+    color: white !important;
+}
+
+#body .btn1 {
+       background-color: blue;
+       color: white;
+       padding: 10px 50px !important;
+       border: none;
+       cursor: pointer;
+       font-size: 20px !important;
+       margin-top: 50px !important;
+}
+#body .btn1:hover {
+    background-color: white;
+    color:  blue;
+}
+#body .btn2 {
+       background-color: white;
+       color:  blue;
+       padding: 10px 50px !important;
+       border: none;
+       cursor: pointer;
+       font-size: 20px !important;
+       margin-left: 30px !important;
+}
+#body .btn2:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+
+/* ==================End  Body  =================== */
+/* ==================start  home  =================== */
+#allhone{
+    display: flex;
+    gap: 50px !important;
+}
+#home{
+    width: 30% !important;
+    height: 330px !important;
+    background-color: bisque;
+    margin-top: 50px !important;
+}
+#home img{
+    width: 80% !important;
+    height: 200px !important;
+    margin-top: 60px !important;
+    text-align: right;
+    margin-left: 75px !important;
+    
+}
+#home h2{
+    font-size: 32px !important;
+    margin-left: 20px !important;
+    margin-top: 30px !important;
+}
+#home p{
+    font-size: 22px !important;
+    margin-left: 20px !important;
+}
+#home button{
+    font-size: 22px !important;
+    margin-left: 20px !important;
+    background-color: blue ;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 5px 30px !important;
+    margin-top: 10px !important;
+}
+#home button:hover{
+    background-color: white ;
+    color: blue;
+}
+#home1{
+    width: 30% !important;
+    height: 330px !important;
+    background-color: rgb(164, 240, 181);
+    margin-top: 50px !important;
+}
+#home1 img{
+    width: 80% !important;
+    height: 200px !important;
+    margin-top: 60px !important;
+    text-align: right;
+    margin-left: 75px !important;
+    
+}
+#home1 h2{
+    font-size: 32px !important;
+    margin-left: 20px !important;
+    margin-top: 30px !important;
+}
+#home1 p{
+    font-size: 22px !important;
+    margin-left: 20px !important;
+}
+#home1 button{
+    font-size: 22px !important;
+    margin-left: 20px !important;
+    background-color: blue ;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 5px 30px !important;
+    margin-top: 10px !important;
+}
+#home1 button:hover{
+    background-color: white ;
+    color: blue;
+}
+
+#home2{
+    width: 30% !important;
+    height: 330px !important;
+    background-color: rgb(208, 195, 195);
+    margin-top: 50px !important;
+}
+#home2 img{
+    width: 80% !important;
+    height: 200px !important;
+    margin-top: 60px !important;
+    text-align: right;
+    margin-left: 75px !important;
+    
+}
+#home2 h2{
+    font-size: 32px !important;
+    margin-left: 20px !important;
+    margin-top: 30px !important;
+}
+#home2 p{
+    font-size: 22px !important;
+    margin-left: 20px !important;
+}
+#home2 button{
+    font-size: 22px !important;
+    margin-left: 20px !important;
+    background-color: blue ;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 5px 30px !important;
+    margin-top: 10px !important;
+}
+#home2 button:hover{
+    background-color: white ;
+    color: blue;
+}
+
+/* ==================End  home  =================== */
+/* ==================start  boxes  =================== */
+
+#boxes{
+   margin-top: 150px ;
+   display: flex;
+   gap: 30px !important;
+}
+
+#box{
+    width: 27% !important;
+    height: 400px !important;
+    padding: 20px 30px !important;
+    text-align: center;
+    background-color: rgb(225, 220, 220);
+}
+#box button{
+    background-color: brown;
+    font-size: 22px !important;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px !important;
+    border-radius: 11px !important;
+    margin-top: 10px ;
+}
+#box button:hover{
+    background-color: rgb(255, 255, 255);
+}
+#box img {
+    width: 100% !important;
+    height: 250px !important;
+}
+
+#boxes1{
+   margin-top: 150px ;
+   display: flex;
+   white-space: nowrap;
+   gap: 30px !important;
+   overflow: hidden;
+}
+
+#box{
+    width: 27% !important;
+    height: 400px !important;
+    padding: 20px 30px !important;
+    text-align: center;
+    background-color: rgb(225, 220, 220);
+}
+#box button{
+    background-color: brown;
+    font-size: 22px !important;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px !important;
+    border-radius: 11px !important;
+    margin-top: 10px ;
+}
+#box button:hover{
+    background-color: rgb(255, 255, 255);
+}
+#box img {
+    width: 100% !important;
+    height: 250px !important;
+}
+/* ==================End boxes =================== */
+
+

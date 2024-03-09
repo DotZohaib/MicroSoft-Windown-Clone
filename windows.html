@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows / Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-dRtXyAZbN2U5nLQSmx95PTufGRXo1OG7b8waUpQqqLYE1iWpHjSpSIKxFKqOOlJw" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-dRtXyAZbN2U5nLQSmx95PTufGRXo1OG7b8waUpQqqLYE1iWpHjSpSIKxFKqOOlJw" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200;1,300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #nav {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #nav img {
+            width: 180px;
+        }
+
+        #nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        #nav ul li {
+            margin-right: 20px;
+        }
+
+        #nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        #nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            color: #000;
+            /* Adjust the color */
+        }
+
+        .left {
+            text-align: right;
+        }
+
+        .left button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .left button:hover {
+            background-color: white;
+            color: #0056b3;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #nav img {
+                width: 100px;
+            }
+
+            #nav ul li {
+                margin-right: 5px;
+            }
+
+            .left button {
+                padding: 5px 10px;
+                font-size: 12px;
+                /* Adjust the font size */
+            }
+
+            #nav {
+                width: auto !important;
+                height: 50px;
+                padding: 0 12px;
+                font-size: 17px !important;
+            }
+
+            .left {
+                text-align: right;
+                margin-left: 36.6px !important;
+            }
+
+            #nav ul li a {
+                padding: 5px;
+                font-size: 13px !important;
+            }
+        }
+
+        #container {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 50px !important;
+            background: url("img/Screenshot-25-989x556-1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100% !important;
+            height: 90vh;
+            /* Optionally, set a height to ensure the background covers the entire viewport */
+        }
+
+        #container h1 {
+            font-size: 44px !important;
+            padding-top: 12% !important;
+            padding-left: 100px !important;
+        }
+
+        #container p {
+            font-size: 20px !important;
+            padding-left: 100px !important;
+        }
+
+        #container button {
+            font-size: 20px !important;
+            color: white;
+            background-color: blue;
+            margin-left: 100px !important;
+            margin-top: 30px !important;
+            padding: 10px 40px !important;
+            cursor: pointer;
+        }
+
+        #container button:hover {
+            background-color: white;
+            color: #0056b3;
+        }
+
+        #container a {
+            font-size: 20px !important;
+            color: blue;
+            background-color: white;
+            margin-left: 10px !important;
+            margin-top: 30px !important;
+            padding: 10px 40px !important;
+            cursor: pointer;
+        }
+
+        #container a:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            #container {
+                margin-top: 30px !important;
+                width: 100% !important;
+                height: 60vh;
+            }
+
+            #container h1 {
+                font-size: 30px !important;
+                padding-top: 12% !important;
+                padding-left: 20px !important;
+            }
+
+            #container p {
+                font-size: 16px !important;
+                padding-left: 20px !important;
+            }
+
+            #container button {
+                font-size: 15px !important;
+                margin-left: 20px !important;
+                margin-top: 30px !important;
+                padding: 10px 20px !important;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #body {
+            margin-left: 30px !important;
+            margin-right: 30px !important;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        header {
+            margin-bottom: 15px;
+        }
+
+        #body h1 {
+            display: inline-block;
+            margin-left: 15px;
+            color: #0078d4;
+            /* Windows Blue color */
+        }
+
+        #body span {
+            color: #777;
+        }
+
+        #body p {
+            margin-left: 15px;
+        }
+
+        #body a {
+            color: #0078d4;
+            text-decoration: underline;
+        }
+
+        #body a:hover {
+            color: #004e8c;
+            /* Darker blue on hover */
+        }
+
+
+        @media only screen and (max-width: 768px) {
+            #body {
+                margin-left: 20px !important;
+                margin-right: 20px !important;
+                margin: 20px auto;
+                padding: 20px;
+            }
+
+            header {
+                margin-bottom: 15px;
+            }
+
+            #body h1 {
+                margin-left: 15px;
+                font-size: 25px !important;
+                margin-bottom: 10px !important;
+            }
+
+            #body p {
+                margin-left: 15px;
+            }
+
+        }
+
+
+
+
+        #body2 img {
+            align-items: right;
+            /* Align the image to the right */
+            margin-left: 780px !important;
+            margin-top: 50px !important;
+        }
+
+
+
+        #body2 h1 {
+            color: #0078d4;
+            padding-left: 90px !important;
+            font-size: 25px !important;
+        }
+
+        #body2 p {
+            padding-left: 90px !important;
+            margin-top: 10px !important;
+            font-size: 14px !important;
+        }
+
+        #body2 ul {
+            padding-left: 100px !important;
+            margin-top: 30px !important;
+            color: #0056b3;
+        }
+
+        #body2 button {
+            margin-left: 90px !important;
+            margin-top: 50px !important;
+            padding: 10px 60px !important;
+            background-color: #0078d4;
+            color: white;
+            cursor: pointer;
+        }
+
+        #body2 button:hover {
+            color: #0078d4;
+            background-color: white;
+        }
+
+
+        @media only screen and (max-width: 768px) {
+
+            #body2 {
+                flex-direction: column;
+            }
+
+            #body2 img {
+                display: none;
+            }
+
+            #body2 h1 {
+                padding-left: 20px !important;
+                font-size: 18px !important;
+                margin-top: 30px !important;
+            }
+
+            #body2 p {
+                padding-left: 20px !important;
+                margin-top: 10px !important;
+                font-size: 14px !important;
+            }
+
+            #body2 ul {
+                padding-left: 30px !important;
+                margin-top: 30px !important;
+                color: #0056b3;
+            }
+
+            #body2 button {
+                margin-left: 30px !important;
+                margin-top: 50px !important;
+                padding: 10px 30px !important;
+            }
+
+            hr {
+                margin-left: 20px !important;
+                width: 48vw !important;
+                margin-top: 40px !important;
+                margin-bottom: 80px !important;
+            }
+        }
+
+
+        #body3 h1 {
+            color: #0078d4;
+            padding-left: 90px !important;
+            font-size: 25px !important;
+        }
+
+        #body3 p {
+            padding-left: 90px !important;
+            margin-top: 10px !important;
+            font-size: 14px !important;
+        }
+
+        #body3 ul {
+            padding-left: 100px !important;
+            margin-top: 30px !important;
+            color: #0056b3;
+        }
+
+        #body3 button {
+            margin-left: 90px !important;
+            margin-top: 50px !important;
+            padding: 10px 60px !important;
+            background-color: #0078d4;
+            color: white;
+            cursor: pointer;
+        }
+
+        #body3 button:hover {
+            color: #0078d4;
+            background-color: white;
+        }
+
+
+
+
+
+
+        #body4 h1 {
+            color: #0078d4;
+            padding-left: 90px !important;
+            font-size: 25px !important;
+        }
+
+        #body4 p {
+            padding-left: 90px !important;
+            margin-top: 10px !important;
+            font-size: 14px !important;
+        }
+
+        #body4 ul {
+            padding-left: 100px !important;
+            margin-top: 30px !important;
+            color: #0056b3;
+        }
+
+        #body4 button {
+            margin-left: 90px !important;
+            margin-top: 50px !important;
+            padding: 10px 60px !important;
+            background-color: #0078d4;
+            color: white;
+            cursor: pointer;
+        }
+
+        #body4 button:hover {
+            color: #0078d4;
+            background-color: white;
+        }
+
+        hr {
+            margin-left: 90px !important;
+            margin-right: 40% !important;
+            margin-top: 40px !important;
+            margin-bottom: 80px !important;
+        }
+
+
+
+
+
+        select {
+            width: 40%;
+            margin-left: 90px !important;
+            font-size: 14px;
+            box-sizing: border-box;
+            overflow-wrap: break-word;
+            padding: 10px 20px !important;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 40px !important;
+        }
+
+        select option {
+            padding: 10px 20px !important;
+            font-size: 18px !important;
+        }
+
+        select option:checked {
+            color: #0078d4;
+        }
+
+        select option:hover {
+            background-color: #0078d4;
+            color: white;
+        }
+
+
+        #forms {
+            display: flex;
+            background-color: whitesmoke;
+        }
+
+        #row {
+            list-style: none;
+            margin-left: 50px !important;
+            margin-bottom: 50px !important;
+        }
+
+        #row h1 {
+            font-size: 20px !important;
+
+        }
+
+        #row h3 {
+            font-size: 12px !important;
+
+        }
+
+        #row li {
+            margin-top: 20px !important;
+        }
+
+        #row li a {
+            text-decoration: none;
+            margin-top: 10px !important;
+        }
+
+        #row li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <img src="img/download.png" alt="">
+            <li><a href="#">|</a></li>
+            <li><a href="#">Windows</a></li>
+        </ul>
+        <div class="left">
+            <button>Check for Upgrade Now</button>
+        </div>
+    </div>
+
+    <div id="container">
+        <h1>Make the everyday easier</h1>
+        <p>Whether you’re gaming, studying, running a business, or running a household, </p>
+        <p>Windows 11 helps you get it done. Discover streamlined new features for </p>
+        <p>every way you work, learn, and
+            play.</p>
+
+        <button> Get Windows 11</button>
+    </div>
+
+    <div id="body">
+        <header>
+            <h1>Download Windows 11</h1>
+            <span>(Current release: Windows 11 2023 Update | Version 23H2)</span>
+        </header>
+        <p>
+            There are 3 options below for installing or creating Windows 11 media. Check out each one to determine the
+            best option for you.
+            <br>
+            <!-- If you are upgrading from Windows 10, we recommend that you wait until you are notified through Windows Update that the upgrade is ready for your PC. -->
+            <br>
+            Before installing, please refer to the <a
+                href="https://www.microsoft.com/en-us/windows/windows-11#pchealthcheck" target="_blank">PC Health
+                Check</a> app to confirm your device meets the minimum system requirements for Windows 11 and check the
+            <a href="https://aka.ms/windowsreleasehealth" target="_blank">Windows release information status</a> for
+            known issues that may affect your device.
+        </p>
+    </div>
+
+    <div id="body2">
+        <img src="img/w11.png" alt="">
+        <h1><b>Windows 11 Installation Assistant</b></h1>
+        <p>This is the best option for installing Windows 11 on the device you’re currently using. Click <b>Download
+                Now</b></p>
+        <p> to get started.</p>
+        <ul>
+            <i class="fa-solid fa-circle-plus"></i>
+            <li><i class="fas fa-plus-circle"></i><a href="#"> Before you begin using Installation Assistant</a></li>
+        </ul>
+        <button>Upgrade Now</button>
+        <hr>
+
+
+    </div>
+
+    <div id="body3">
+        <h1><b>Create Windows 11 Installation Media</b></h1>
+        <p>If you want to perform a reinstall or clean install of <b>Windows 11</b> on a new or used PC, use this </p>
+        <p> option to download the media creation tool to make a bootable USB or DVD.</p>
+        <ul>
+            <i class="fa-solid fa-circle-plus"></i>
+            <li><i class="fas fa-plus-circle"></i><a href="#">Before you begin using the media creation tool</a></li>
+        </ul>
+        <button>Download Now</button>
+        <hr>
+
+
+    </div>
+
+    <div id="body4">
+        <h1><b>Download Windows 11 Disk Image (ISO) for x64 devices</b></h1>
+        <p>This option is for users that want to create a bootable installation media <b>(USB flash drive, DVD) </b></p>
+        <p> or create a virtual machine (.ISO file) to install Windows 11. This download is a multi-edition ISO </p>
+        <p>which uses your product key to unlock the correct edition.</p>
+
+
+
+        <select>
+            <option value="" selected="selected">Select Download</option>
+
+            <option value="2860">Windows 11 (multi-edition ISO for x64 devices)</option>
+
+        </select>
+
+
+
+
+
+        <ul>
+            <i class="fa-solid fa-circle-plus"></i>
+            <li><i class="fas fa-plus-circle"></i><a href="#">Before you begin downloading an ISO</a></li>
+        </ul>
+        <button>Download Now</button>
+        <hr>
+
+
+    </div>
+
+    <div id="forms">
+        <div id="row">
+            <li>
+                <h1>What's new</h1>
+            </li>
+            <li><a href="#">
+                    <h3>Surface Laptop Studio 2</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Surface Laptop Go 3</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Surface Pro 9</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Surface Laptop 5</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Surface Studio 2+</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Copilot in Windows</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft 365</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Windows 11 apps</h3>
+                </a></li>
+        </div>
+        <div id="row">
+            <li>
+                <h1>Microsoft Store</h1>
+            </li>
+            <li><a href="#">
+                    <h3>Account profile</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft Store Promise</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Download Center</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft Store support</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Returns</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Order tracking</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Certified Refurbished</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Flexible Payments</h3>
+                </a></li>
+        </div>
+        <div id="row">
+            <li>
+                <h1> Education</h1>
+            </li>
+            <li><a href="#">
+                    <h3>Microsoft in education</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Devices for education</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft Teams for Education</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft 365 Education</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>How to buy for your school</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Educator training and development</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Deals for students and parents</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Azure for students</h3>
+                </a></li>
+        </div>
+        <div id="row">
+            <li>
+                <h1>Business</h1>
+            </li>
+            <li><a href="#">
+                    <h3>Microsoft Cloud</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft Security</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Dynamics 365</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft 365</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft Power Platform</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft Teams</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft Industry</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Small Business</h3>
+                </a></li>
+        </div>
+        <div id="row">
+            <li>
+                <h1>Developer & IT</h1>
+            </li>
+            <li><a href="#">
+                    <h3>Azure</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Developer Center</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Documentation</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft Learn</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Microsoft Tech Community</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Azure Marketplace</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>AppSource</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Visual Studio</h3>
+                </a></li>
+        </div>
+        <div id="row">
+            <li>
+                <h1>Company</h1>
+            </li>
+            <li><a href="#">
+                    <h3>Careers</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>About Microsoft</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Company news</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Privacy at Microsoft</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Investors</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Diversity and inclusion</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Accessibility</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Sustainability</h3>
+                </a></li>
+        </div>
+    </div>
+
+</body>
+
+</html>

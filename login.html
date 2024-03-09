@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login / sign up </title>
+</head>
+   <style>
+    body{
+        background-image: url("img/wallpaperflare.com_wallpaper\ \(3\).jpg") ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #form {
+        margin-bottom: 15px;
+        background-color: #ff00e1;
+        justify-content: center;
+        max-width: 50%;
+        background-size: cover;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    #form {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+    
+   </style>
+<body>
+    <div id="form">
+        <label for="name ">Name : </label>
+        <input type="text" name="myName" value="" placeholder="Enter Your Name">
+        <div id="form">
+        <label for="Email">Email : </label>
+        <input type="Email" Email="myEmail" value="" placeholder="Enter Your Email">
+        <div id="form">
+        <label for="Country">Country: </label>
+        <input type="text" name="myCountry" value="" placeholder="Enter YouCountry">
+        <div id="form">
+        <label for="Age">Age: </label>
+        <input type="text" name="myAge" value="" placeholder="Enter Your Age">
+        <label for="YouGender">YouGender </label>
+        <label for="Male">Male</label>
+        <input type="radio" name="myGender" id="Gender">
+        <label for="female">female</label>
+        <input type="radio" name="myGender" id="Gender">
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var form = document.querySelector('#form');
+        
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission behavior
+        
+                // Form validation example
+                if (!validateForm()) {
+                    // If validation fails, you can add error handling or messages here
+                    return;
+                }
+        
+                // Placeholder for form data handling logic
+                var formData = {
+                    name: form.elements['myName'].value,
+                    email: form.elements['myEmail'].value,
+                    country: form.elements['myCountry'].value,
+                    age: form.elements['myAge'].value,
+                    gender: getSelectedGender()
+                };
+        
+                // Placeholder: Displaying form data in an alert
+                alert(JSON.stringify(formData));
+        
+                // You can add more logic here, such as sending the data to a server using AJAX
+            });
+        
+            // Example: Form validation function
+            function validateForm() {
+                var name = form.elements['myName'].value;
+                var email = form.elements['myEmail'].value;
+                // Add more validation for other fields as needed
+        
+                if (!name || !email) {
+                    // Display an error message or highlight the fields with errors
+                    alert('Please fill out all required fields.');
+                    return false;
+                }
+        
+                // Add more validation rules as needed
+        
+                return true;
+            }
+        
+            // Example: Get the selected gender from radio buttons
+            function getSelectedGender() {
+                var genderRadios = form.elements['myGender'];
+                for (var i = 0; i < genderRadios.length; i++) {
+                    if (genderRadios[i].checked) {
+                        return genderRadios[i].value;
+                    }
+                }
+                return null; // Return null if no gender is selected
+            }
+        
+            // Example: Add animation when the form is loaded
+            form.style.opacity = 0;
+            form.style.transition = 'opacity 0.5s ease-in-out';
+        
+            setTimeout(function() {
+                form.style.opacity = 1;
+            }, 100);
+        });
+        
+    </script>
+</body>
+
+</html>

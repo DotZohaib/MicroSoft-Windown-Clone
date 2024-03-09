@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>office</title>
+    <link rel="icon" href="img/unnamed-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+
+    body {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    #container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #home {
+        height: 90vh;
+        width: 99.6vw;
+        background-image: url("img/Hero-MSOffice-1920x750-2x_VP5-1920x720.webp");
+        background-size: cover;
+        background-position: center;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    #home h1 {
+        font-size: 63px;
+        margin-bottom: 10px;
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+
+    #home h4 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        padding-left: 10%;
+    }
+
+    #home #btn {
+        padding: 20px 40px;
+        font-size: 22px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        margin-left: 10%;
+
+    }
+
+    #home #btn:hover {
+
+        background-color: white;
+        color: #007bff;
+
+
+    }
+
+    #home #btn1 {
+        padding: 20px 40px;
+        font-size: 22px;
+        background-color: white;
+        color: #007bff;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    #home #btn1:hover {
+
+        background-color: #007bff;
+        color: white;
+
+    }
+
+    /* <!-- //====================================================================== -->8*/
+
+    .link-list {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        display: flex;
+    }
+
+    .link-list nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .link-list ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .link-list li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .link-list li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .link-list li img {
+        max-width: 58px;
+        max-height: 58px;
+        margin-bottom: 2px;
+    }
+
+    .link-list li div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .link-list li button {
+        padding: 10px 20px;
+        font-size: 1em;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .link-list li:hover {
+        background-color: #ddd;
+    }
+
+
+    #section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 233px;
+        margin-right: 233px;
+        margin-top: 33px;
+    }
+
+    #img img {
+        max-width: 20%;
+        height: auto;
+    }
+
+    #img1 img {
+        max-width: 20%;
+        height: auto;
+    }
+
+    #img2 img {
+        max-width: 20%;
+        height: auto;
+    }
+
+    #img3 img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    /*======================================================*/
+    #boxes {
+        display: flex;
+        margin-top: 60px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .card {
+
+        width: 100%;
+        border: 1px solid #ddd;
+        /* Add border color as needed */
+        border-radius: 8px;
+        /* Adjust border radius as needed */
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        margin: 10px 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        /* Adjust the scale factor for the hover effect */
+    }
+
+    .card img {
+        height: 300px;
+        /* Set the desired height for the card images */
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        /* Adjust the font size for the card title */
+        margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        /* Adjust the font size for the card text */
+        color: #555;
+        /* Set text color as needed */
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        /* Set the primary button background color */
+        border: 2px solid #007bff;
+        color: #fff;
+        /* Set the button text color */
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 30px !important;
+    }
+
+    .btn-primary:hover {
+        background-color: white;
+        /* Set the button background color on hover */
+        color: #0056b3;
+        /* Set the button background color on hover */
+    }
+
+
+    #section5 {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+        width: 100%;
+        margin: 33px 30px;
+        height: 300px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #fol h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    #section5 div {
+        text-align: center;
+        margin: 10px;
+    }
+
+    #section5 img {
+        margin-top: 50px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #section5 h1 {
+        margin: 10px 0;
+        font-size: 22px;
+    }
+
+    #section5 a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 18px;
+    }
+
+    
+footer{
+    display: flex;
+    list-style: none;
+    gap: 190px;
+    padding-left: 80px;
+    margin-top: 40px;
+    /* padding-top: 50px; */
+    background-color: #ddd;
+    padding-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+  }
+  footer li {
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  footer li a{
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  footer li a:hover{
+    text-decoration: underline;
+  }
+</style>
+
+<body>
+    <div id="container">
+        <div id="home">
+            <h1><b>Office is now Microsoft 365</b></h1>
+            <h4><b>Find the right plan for you</b></h4>
+            <button id="btn" type="submit">Login Up</button>
+            <button id="btn1" type="submit">Sign Up</button>
+        </div>
+    </div>
+    <section id="section">
+        <div id="img">
+            <img src="logo/kisspng-microsoft-powerpoint-presentation-slide-slide-show-power-point-5ac26862ba0f92.4029246715226901467621.jpg"
+                alt="">
+            <a href="#">
+                <h1><b>PowerPoint</b></h1>
+            </a>
+        </div>
+        <div id="img1">
+            <img src="logo/png-clipart-microsoft-excel-logo-microsoft-word-microsoft-office-365-pivot-table-excel-office-xlsx-icon-microsoft-excel-logo-miscellaneous-template.png"
+                alt="">
+            <a href="#">
+                <h1><b>Excel</b></h1>
+            </a>
+        </div>
+        <div id="img2">
+            <img src="logo/png-clipart-microsoft-word-microsoft-office-2016-microsoft-excel-microsoft-template-blue.png"
+                alt="">
+            <a href="#">
+                <h1><b>Word</b></h1>
+            </a>
+        </div>
+        <div id="img3">
+            <img src="logo/onenote.png" alt="">
+            <a href="#">
+                <h1><b>NotePad</b></h1>
+            </a>
+        </div>
+    </section>
+
+    <div id="boxes">
+        <div class="card">
+            <img src="img/25microsoft-gpjb-videoSixteenByNine3000.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Designed for life today – and tomorrow</h5>
+                <p class="card-text">The next-generation of games. Your goals. Friends and family. Windows 11 was
+                    made to bring you closer to everything you love.</p>
+                <a href="#" class="btn btn-primary">See if your PC is ready</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/Navo-Microsoft.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Microsoft Edge</h5>
+                <p class="card-text">World-class performance with more privacy, more productivity and more value
+                    while you browse.</p>
+                <a href="#" class="btn btn-primary">Download now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/107171454-1672168914998-gettyimages-1245840483-PORTUGAL_ECO.jpeg" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Microsoft OneDrive</h5>
+                <p class="card-text">Save your files and photos to OneDrive and access them from any device,
+                    anywhere.</p>
+                <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="fol">
+        <h1>Learn more about Microsoft 365</h1>
+    </div>
+    <div id="section5">
+        <div>
+            <img
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Icon_Home_2x_RE4r1E5?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;wid=45&amp;hei=45&amp;qlt=100&amp;fit=constrain">
+            <div>
+                <h2><b>Home</b></h2>
+                <div><a data-bi-cn="Learnmore3" data-bi-ecn="Learn more"
+                        href="https://www.microsoft.com/en/microsoft-365/explore-microsoft-365-for-home">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Icon_Business_2x_RE4qRrT?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;wid=45&amp;hei=45&amp;qlt=100&amp;fit=constrain">
+            <div>
+                <h2><b>Business</b></h2>
+                <div><a href="https://www.microsoft.com/en/microsoft-365/business">Learn more</a></div>
+            </div>
+        </div>
+
+        <div>
+            <img
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Icon_Enterprise_2x_RE4qWNO?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;wid=45&amp;hei=45&amp;qlt=100&amp;fit=constrain">
+            <div>
+                <h2><b>Enterprise</b></h2>
+                <div><a href="https://www.microsoft.com/en/microsoft-365/enterprise">Learn more</a></div>
+            </div>
+        </div>
+
+        <div>
+            <img
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Icon_Education_2x_RE4qU6q?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;wid=50&amp;hei=50&amp;qlt=100&amp;fit=constrain">
+            <div>
+                <h2><b>Education</b></h2>
+                <div><a href="https://go.microsoft.com/fwlink/p/?LinkID=864773&amp;culture=en-us&amp;country=ww">Learn
+                        more</a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="one">
+            <li><a href="#">
+                    <h3>Microsoft Store</h3>
+                </a></li>
+            <li><a href="#">Account profile</a></li>
+            <li><a href="#">Download Center</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order tracking</a></li>
+        </div>
+        <div id="two">
+            <li><a href="#">
+                    <h3>Microsoft Store</h3>
+                </a></li>
+            <li><a href="#">Account profile</a></li>
+            <li><a href="#">Download Center</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order tracking</a></li>
+        </div>
+        <div id="three">
+            <li><a href="#">
+                    <h3>Microsoft Store</h3>
+                </a></li>
+            <li><a href="#">Account profile</a></li>
+            <li><a href="#">Download Center</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order tracking</a></li>
+        </div>
+        <div id="four">
+            <li><a href="#">
+                    <h3>Microsoft Store</h3>
+                </a></li>
+            <li><a href="#">Account profile</a></li>
+            <li><a href="#">Download Center</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order tracking</a></li>
+        </div>
+        <div id="fifth">
+            <li><a href="#">
+                    <h3>Microsoft Store</h3>
+                </a></li>
+            <li><a href="#">Account profile</a></li>
+            <li><a href="#">Download Center</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order tracking</a></li>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
